@@ -16,9 +16,9 @@ function calculate() {
   var commonLength = NaN;
   var r = [];
   // Template using underscore
-  var row = "<%% _.each(items, function(name) { %>"     +
-            "                    <td><%%= name %></td>" +
-            "              <%% }); %>";
+  var row = "<% _.each(items, function(name) { %>"     +
+            "                    <td><%= name %></td>" +
+            "              <% }); %>";
 
   if (window.localStorage) localStorage.original  = temp;
   
@@ -41,7 +41,7 @@ function calculate() {
         var removecomma = m[i].replace(/,\s*$/,'');
         var remove1stquote = removecomma.replace(/^\s*"/,'');
         var removelastquote = remove1stquote.replace(/"\s*$/,'');
-        var removeescapedquotes = removelastquote.replace(/\"/,'"');
+        var removeescapedquotes = removelastquote.replace(/\\"/,'"');
         result.push(removeescapedquotes);
       }
       var tr = error? '<tr class="error">' : '<tr>';
