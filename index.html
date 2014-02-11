@@ -1,7 +1,7 @@
 <html>
   <head>
      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <title>CSV Analyzer</title>
+     <title>Analizador CSV</title>
      <link href="global.css" rel="stylesheet" type="text/css">
 
      <script type="text/javascript" src="../../underscore/underscore.js"></script>
@@ -9,17 +9,17 @@
      <script type="text/javascript" src="csv.js"></script>
   </head>
   <body>
-    <h1>Comma Separated Value Analyzer</h1>
+    <h1>Analizador Comma Separated Value</h1>
     <div>
-      <i>Write a CSV string. Click the table button. The program outputs a table with the specified data.</i>
+      <i>Escribe una cadena CSV. Haz clic en el botón crear tabla. El programa muestra una tabla con la información especificada.</i>
     </div>
     <table>
       <tr>
-        <th>CSV string:</th> <!-- autofocus attribute is HTML5 -->
+        <th>Cadena CSV</th> <!-- autofocus attribute is HTML5 -->
         <td><textarea autofocus cols = "80" rows = "5" id="original"></textarea></td> 
       </tr>
     </table>
-    <button type="button">table:</button><br>
+    <button type="button">Crear tabla:</button><br>
     <span class="output" id="finaltable"></span>
   </body>
 </html>
