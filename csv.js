@@ -21,7 +21,7 @@ function calculate() {
             "              <% }); %>";
 
   if (window.localStorage) localStorage.original  = temp;
-  
+
   for(var t in lines) {
     var temp = lines[t];
     var m = temp.match(regexp);
