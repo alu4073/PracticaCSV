@@ -48,7 +48,7 @@ function calculate() {
       r.push(tr+_.template(row, {items : result})+"</tr>");
     }
     else {
-      alert('ERROR! row '+temp+' does not look as legal CSV');
+      alert('ERROR! Compruebe que ha introducido datos con formato CSV correctos.');
       error = true;
     }
   }
