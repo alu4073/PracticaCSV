@@ -31,7 +31,7 @@ body
 }
 
 
-.button {
+.miboton {
 	-moz-box-shadow:inset 0px 0px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 0px 0px 0px #ffffff;
 	box-shadow:inset 0px 0px 0px 0px #ffffff;
@@ -66,12 +66,19 @@ body
 	text-align:center;
 	text-shadow:3px 3px 5px #ffffff;
 }
-.button:hover {
+.miboton:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9) );
 	background:-moz-linear-gradient( center top, #e9e9e9 5%, #f9f9f9 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9');
 	background-color:#e9e9e9;
-}.button:active {
+}.miboton:active {
 	position:relative;
 	top:1px;
+}
+
+.botonlink {
+	display: block;
+	margin-left: auto; 
+	margin-right: auto;
+    width:200px;
 }
