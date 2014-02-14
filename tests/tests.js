@@ -11,6 +11,9 @@ suite('Resultados de los tests:', function() {
         calculate();
         assert.match(finaltable.innerHTML, /error/);
     });
+	test('Comprobación del funcionamiento del almacenamiento local', function () {
+        assert.deepEqual(localStorage.original, "Dia, Asignatura \n Lunes, Matemáticas \n Jueves, Inglés, Francés \n Viernes, Biología");
+    });
 
 });
 
